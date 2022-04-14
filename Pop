@@ -1,0 +1,50 @@
+mod	trans_guid	split_guid	time_now	date_entered	date_posted	acc_guid	acc_name	num	description	notes	memo	action	reconciled	amount	value	date_reconciled
+-----------------
+===== START
+===== END
+===== START
+C	e1ba80b5557a4d84a36d5228f077c624	a0269cb0f2ab4113aec96a9e01eb8554	2022-01-25 17:31:42	2022-01-25 17:31:42	2022-01-25 10:59:00	40d26f3aa10041d2b81cf8c36f45c7de	Current Assets		Opening Balance				n	7387654/100	7387654/100	1970-01-01 00:00:00
+C	e1ba80b5557a4d84a36d5228f077c624	09b45a45d5aa4a0f8c8053f103a9e98a	2022-01-25 17:31:42	2022-01-25 17:31:42	2022-01-25 10:59:00	908e7790879a4a43bb764c2c6fc27436	Opening Balances		Opening Balance				n	-7387654/100	-7387654/100	1970-01-01 00:00:00
+===== END
+//
+//  Tests_iOS.swift
+//  Tests iOS
+//
+//  Created by Joseph Styner on 6/17/21.
+//
+
+import XCTest
+
+class Tests_iOS: XCTestCase {
+
+    override func setUpWithError() throws {
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        // In UI tests it is usually best to stop immediately when a failure occurs.
+        continueAfterFailure = false
+
+        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+    }
+
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+
+    func testExample() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+
+    func testLaunchPerformance() throws {
+        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+            // This measures how long it takes to launch your application.
+            measure(metrics: [XCTApplicationLaunchMetric()]) {
+                XCUIApplication().launch()
+            }
+        }
+    }
+}
